@@ -1,0 +1,51 @@
+.info_header{
+    
+    background-color: #ba0000;
+    padding: 18px 0;
+    color: #ffff;
+    position: relative;
+    font-size: 14px;
+
+
+    a{
+        // font-size: 14px;
+        color: #ffff;
+        font-weight: normal;
+    }
+
+    &_leng, &_contact, &_country {
+       display: flex;
+       align-items: center;
+       justify-content: end;
+    
+    }
+    &_leng{
+        justify-content: start;
+        
+        i{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    
+    &_contact{
+        i{
+            margin-right: 10px;
+        }
+    }
+
+
+    .sub_menu{
+        padding: 10px 10px 10px 1px;
+        background: rgba(#ba0000, 0.8);
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        position: absolute;
+        display: none;
+        
+        
+        &_active{
+            display: block;
+        }
+    }
+}
